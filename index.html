@@ -69,11 +69,12 @@ a.plat:hover{border-color:var(--acc)}
 .bm{font-size:12px;color:var(--mute);border-top:1px solid #5A4A3A;width:100%;text-align:center;padding-top:6px}
 .er{display:flex;align-items:baseline;gap:14px;margin-top:14px}
 .er b{font-family:Unbounded,sans-serif;font-size:34px;color:var(--acc);white-space:nowrap}
-.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.reels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .reel{position:relative;border-radius:18px;overflow:hidden;text-decoration:none}
-.reel img{width:100%;aspect-ratio:9/16;object-fit:cover;transition:transform .3s}
+.reel img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top;transition:transform .3s}
 .reel:hover img{transform:scale(1.04)}
-.reel span{position:absolute;left:0;right:0;bottom:0;padding:40px 12px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:700;font-size:15px}
+.reel span{position:absolute;left:0;right:0;bottom:0;padding:48px 14px 14px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-weight:600;font-size:14px;line-height:1.3;display:flex;flex-direction:column;gap:2px}
+.reel span b{font-family:Unbounded,sans-serif;font-size:20px;color:var(--acc)}
 .shlist{display:flex;flex-direction:column}
 .sh{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);text-decoration:none}
 .sh:hover .st{color:var(--acc)}
@@ -130,7 +131,7 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
  section{padding:52px 0}
 }
 @media (max-width:560px){
- .plats,.reels{grid-template-columns:1fr 1fr}
+ .plats{grid-template-columns:1fr 1fr}
  .kpis{grid-template-columns:1fr 1fr 1fr;gap:10px}
  .kpi b{font-size:20px}
  .fact{grid-template-columns:1fr;gap:4px}
@@ -196,7 +197,7 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
 <div class="kick">Хиты</div>
 <h2>Рекордный ролик: <span style="color:var(--acc)">42,3 млн</span> просмотров</h2>
 <div class="twocol" style="margin-top:30px">
-<div class="reels"><a class="reel" href="https://www.instagram.com/postavshik1/reel/C2feIZ2rNQR/" target="_blank" rel="noopener"><img src="img/p1.jpg" alt="Сырники, 42,3 млн просмотров" loading="lazy"><span>Сырники</span></a><a class="reel" href="https://www.instagram.com/postavshik1/reels/" target="_blank" rel="noopener"><img src="img/p2.jpg" alt="Закусочные шарики, 12,4 млн просмотров" loading="lazy"><span>Закусочные шарики</span></a><a class="reel" href="https://www.instagram.com/postavshik1/reels/" target="_blank" rel="noopener"><img src="img/p3.jpg" alt="Салат с креветками и манго, 9 млн просмотров" loading="lazy"><span>Салат с креветками и манго</span></a></div>
+<div class="reels"><a class="reel" href="https://www.instagram.com/postavshik1/reel/C2feIZ2rNQR/" target="_blank" rel="noopener"><img src="img/r1.jpg" alt="Сырники, 42,3 млн просмотров" loading="lazy"><span><b>42,3 млн</b>Сырники</span></a><a class="reel" href="https://www.instagram.com/postavshik1/reels/" target="_blank" rel="noopener"><img src="img/r2.jpg" alt="Закусочные шарики, 12,4 млн просмотров" loading="lazy"><span><b>12,4 млн</b>Закусочные шарики</span></a><a class="reel" href="https://www.instagram.com/postavshik1/reels/" target="_blank" rel="noopener"><img src="img/r3.jpg" alt="Салат с креветками и манго, 9 млн просмотров" loading="lazy"><span><b>9 млн</b>Салат с креветками и манго</span></a><a class="reel" href="https://www.instagram.com/postavshik1/reels/" target="_blank" rel="noopener"><img src="img/r4.jpg" alt="Драники с сыном, 6,9 млн просмотров" loading="lazy"><span><b>6,9 млн</b>Драники с сыном</span></a></div>
 <div>
 <h3>Лучшие YouTube Shorts</h3>
 <div class="shlist"><a class="sh" href="https://www.youtube.com/shorts/KxID_Df89A8" target="_blank" rel="noopener"><span class="st">Хрустящие картофельные палочки</span><span class="sv">4,4 млн</span></a><a class="sh" href="https://www.youtube.com/shorts/rE0OoSWhR4c" target="_blank" rel="noopener"><span class="st">Тунец, мидии и филе креветок по низким ценам</span><span class="sv">4,3 млн</span></a><a class="sh" href="https://www.youtube.com/shorts/aQWi55jnYM4" target="_blank" rel="noopener"><span class="st">Хрустящий перекус к фильму</span><span class="sv">2,9 млн</span></a><a class="sh" href="https://www.youtube.com/shorts/1BRwVt0D5Ks" target="_blank" rel="noopener"><span class="st">Сочно, вкусно, по-домашнему</span><span class="sv">2,2 млн</span></a><a class="sh" href="https://www.youtube.com/shorts/EAeVIWEXIIM" target="_blank" rel="noopener"><span class="st">Мороженое в круассане</span><span class="sv">2 млн</span></a><a class="sh" href="https://www.youtube.com/shorts/Ad93khdr_OE" target="_blank" rel="noopener"><span class="st">1 кг креветок за 470 ₽</span><span class="sv">1,8 млн</span></a></div>
