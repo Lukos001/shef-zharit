@@ -158,12 +158,22 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
  .fab{padding:12px 14px}
 }
 .card.light .acts .more-btn{background:var(--ink);color:var(--text);border-color:var(--ink)}
+#faq{padding-top:24px}
+.faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin-top:28px;align-items:start}
+.qa{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:0 22px;transition:border-color .15s}
+.qa[open]{border-color:var(--acc)}
+.qa summary{list-style:none;cursor:pointer;padding:18px 0;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-family:Unbounded,sans-serif;font-size:22px;color:var(--acc);flex-shrink:0;line-height:1}
+.qa[open] summary::after{content:"−"}
+.qa p{margin:0 0 18px;color:var(--soft);font-size:15px}
+@media (max-width:900px){.faq{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <nav><div class="wrap">
 <a class="logo" href="#top">Шеф Жарит</a>
-<div class="links"><a href="#audience">Аудитория</a><a href="#hits">Хиты</a><a href="#formats">Форматы</a><a href="#packages">Пакеты</a><a href="#contact">Контакты</a></div>
+<div class="links"><a href="#audience">Аудитория</a><a href="#hits">Хиты</a><a href="#formats">Форматы</a><a href="#packages">Пакеты</a><a href="#faq">Вопросы</a><a href="#contact">Контакты</a></div>
 <a class="btn" href="mediakit.pdf" download="Шеф Жарит медиакит 2026.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>PDF-презентация</a>
 </div></nav>
 
@@ -260,6 +270,13 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
 <div>Предоплата 100%. Публикации остаются на площадках не менее 12 месяцев. Не является офертой, действует до 31.12.2026.</div>
 <div>Реклама маркируется по закону. Telegram-канал зарегистрирован в РКН, №&nbsp;6474162684.</div>
 </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<div class="kick">Частые вопросы</div>
+<h2>Ответы до первого сообщения</h2>
+<p class="lead">Собрали вопросы, которые бренды и агентства задают чаще всего.</p>
+<div class="faq"><details class="qa"><summary>Цены указаны с налогами?</summary><p>Да, все цены включают налоги, без НДС. Работаем по договору с ИП, предоплата 100%.</p></details><details class="qa"><summary>Чей сценарий и чем 160&nbsp;000&nbsp;₽ отличается от 330&nbsp;000&nbsp;₽?</summary><p>В ролике-рецепте сценарий наш: продукт нативно живёт в рецепте, в кадре упаковка с логотипом, в описании название и ссылка. Если нужны ваш сценарий, обязательные УТП, призыв к действию или текст озвучки слово в слово, это формат «По вашему заданию».</p></details><details class="qa"><summary>Можно согласовать сценарий и ролик до публикации?</summary><p>Да. Идею и сценарий присылаем за 2 рабочих дня, включён 1 круг правок, готовый ролик показываем до публикации. Обязательные тезисы фиксируем в брифе до съёмки, чтобы не переснимать.</p></details><details class="qa"><summary>Какую статистику покажете до и после?</summary><p>До старта свежие данные из кабинетов площадок: подписчики, охваты, просмотры. После публикации отчёт по каждой площадке через 7 дней, его удобно приложить к вашей отчётности.</p></details><details class="qa"><summary>Маркировка и документы?</summary><p>Реклама маркируется по закону, можем работать с вашим токеном. Telegram-канал зарегистрирован в РКН. Закрываем договором и актом.</p></details><details class="qa"><summary>Сколько ролик висит и есть ли эксклюзив?</summary><p>Публикации остаются на площадках не менее 12 месяцев. Берём не больше 2 интеграций в месяц, эксклюзив в вашей категории на 30 дней +25% к стоимости.</p></details><details class="qa"><summary>Можно использовать ролик в своей рекламе?</summary><p>Да: на маркетплейсах, сайте и в соцсетях бренда. Права на 3 месяца +30% к стоимости, на другой срок рассчитаем.</p></details><details class="qa"><summary>Публикуете на всех площадках сразу?</summary><p>Да, формат «На всех площадках»: Instagram*, YouTube, TikTok, VK, Дзен и пост в Telegram одним роликом. Для серии и гарантии охвата смотрите пакеты.</p></details><details class="qa"><summary>Гарантируете просмотры?</summary><p>В пакете «Гарантия охвата» да: от 1,5 млн просмотров за 30 дней, не добрали, доснимаем за свой счёт. В остальных форматах даём прогноз по медианам последних месяцев.</p></details><details class="qa"><summary>Работаете по бартеру? Что не берёте?</summary><p>Работаем только на платной основе, продукт для съёмки присылаете вы, Иван в Москве. Не рекламируем алкоголь, включая безалкогольные линейки алкобрендов, и табак. Берём только то, что Иван попробовал и одобрил.</p></details></div>
 </div></section>
 
 <section id="contact"><div class="wrap">
