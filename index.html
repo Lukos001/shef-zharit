@@ -62,11 +62,11 @@ a.plat:hover{border-color:var(--acc)}
 .go{margin-top:8px;font-size:14px;font-weight:700;color:var(--acc)}
 .twocol{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:24px}
 .panel{background:var(--card);border-radius:22px;padding:26px}
-.chart{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;align-items:end;height:260px;border-bottom:1px solid #5A4A3A;margin-top:18px}
+.chart{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;align-items:end;height:290px;margin-top:18px}
 .bar{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px}
 .bar i{display:block;width:100%;background:#5A4A3A;border-radius:8px 8px 0 0}
 .bv{font-size:13px;font-weight:700}
-.bm{font-size:12px;color:var(--mute);position:relative;top:26px;height:0}
+.bm{font-size:12px;color:var(--mute);border-top:1px solid #5A4A3A;width:100%;text-align:center;padding-top:6px}
 .er{display:flex;align-items:baseline;gap:14px;margin-top:14px}
 .er b{font-family:Unbounded,sans-serif;font-size:34px;color:var(--acc);white-space:nowrap}
 .reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
@@ -179,8 +179,8 @@ footer .wrap{display:flex;flex-direction:column;gap:6px}
 <div class="panel">
 <h3 class="disp" style="font-size:22px;font-weight:600">Охват вырос в 2,4 раза с начала года</h3>
 <div style="font-size:14px;color:var(--mute)">Органический охват всех площадок, млн в месяц, 2026</div>
-<div class="chart"><div class="bar"><span class="bv">4,9</span><i style="height:41%"></i><span class="bm">янв</span></div><div class="bar"><span class="bv">5,9</span><i style="height:49%"></i><span class="bm">фев</span></div><div class="bar"><span class="bv">3,4</span><i style="height:29%"></i><span class="bm">мар</span></div><div class="bar"><span class="bv">7,1</span><i style="height:60%"></i><span class="bm">апр</span></div><div class="bar"><span class="bv">4,2</span><i style="height:35%"></i><span class="bm">май</span></div><div class="bar"><span class="bv">9,2</span><i style="height:77%"></i><span class="bm">июн</span></div><div class="bar"><span class="bv">6,7</span><i style="height:57%"></i><span class="bm">июл</span></div><div class="bar"><span class="bv">11,9</span><i style="height:100%;background:var(--acc)"></i><span class="bm">авг</span></div></div>
-<div style="height:34px"></div>
+<div class="chart"><div class="bar"><span class="bv">4,9</span><i style="height:calc((100% - 46px) * 0.413)"></i><span class="bm">янв</span></div><div class="bar"><span class="bv">5,9</span><i style="height:calc((100% - 46px) * 0.495)"></i><span class="bm">фев</span></div><div class="bar"><span class="bv">3,4</span><i style="height:calc((100% - 46px) * 0.289)"></i><span class="bm">мар</span></div><div class="bar"><span class="bv">7,1</span><i style="height:calc((100% - 46px) * 0.600)"></i><span class="bm">апр</span></div><div class="bar"><span class="bv">4,2</span><i style="height:calc((100% - 46px) * 0.351)"></i><span class="bm">май</span></div><div class="bar"><span class="bv">9,2</span><i style="height:calc((100% - 46px) * 0.772)"></i><span class="bm">июн</span></div><div class="bar"><span class="bv">6,7</span><i style="height:calc((100% - 46px) * 0.565)"></i><span class="bm">июл</span></div><div class="bar"><span class="bv">11,9</span><i style="height:calc((100% - 46px) * 1.000);background:var(--acc)"></i><span class="bm">авг</span></div></div>
+<div style="height:14px"></div>
 <div style="font-size:15px">В сентябре рост продолжился: просмотры Instagram* и Facebook* +62% к августу.</div>
 </div>
 <div class="panel" style="display:flex;flex-direction:column;justify-content:center">
