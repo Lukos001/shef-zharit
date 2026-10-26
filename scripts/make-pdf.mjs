@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+import { pathToFileURL } from 'url';
+import path from 'path';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1200, height: 900 } });
+await page.goto(pathToFileURL(path.resolve('mediakit.html')).href, { waitUntil: 'networkidle' });
+await page.evaluate(() => document.fonts.ready);
+await page.pdf({ path: 'mediakit.pdf', preferCSSPageSize: true, printBackground: true });
+await browser.close();
+console.log('mediakit.pdf ready');
